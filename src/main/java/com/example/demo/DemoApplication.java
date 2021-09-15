@@ -14,12 +14,18 @@ public class DemoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
+		log.info("Started");
+		
+		
 	}
 	
 	@Bean
 	public RestTemplate restTemplate(RestTemplateBuilder builder) {
 	   // Do any additional configuration here
-	   return builder.build();
+	   
+		
+		
+		return builder.build();
 	}
 
 }
