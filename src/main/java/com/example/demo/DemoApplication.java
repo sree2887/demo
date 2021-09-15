@@ -13,7 +13,7 @@ public class DemoApplication {
 	private static final Logger log = org.slf4j.LoggerFactory.getLogger(DemoApplication.class);
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+//		SpringApplication.run(DemoApplication.class, args);ssss
 		log.info("Started");
 		
 		
