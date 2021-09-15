@@ -42,7 +42,7 @@ public class BillionairController {
 	
 	@PostMapping(value = "/saveBillionaire")
 	public ResponseEntity<Billionaires> saveBillioanire(@RequestBody Billionaires theGuy){
-		Billionaires billion = billionaireRepo.save(theGuy);
+		Billionaires billion = billionaireRepo.save(theGuy);   
 		if(Objects.nonNull(billion)) {
 			return new ResponseEntity<Billionaires>(billion, HttpStatus.CREATED);
 		}else {
