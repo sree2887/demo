@@ -58,7 +58,7 @@ public class BillionairController {
 	
 	@GetMapping("api/")
 	public ResponseEntity<String>getUsers(){
-		String response = restTemplate.getForObject("https://reqres.in/api/users?page=2", String.class);
+		String response = restTemplate.getForObject("https://reqres.in/api/users?page=21", String.class);
 		return new ResponseEntity<String>(response, HttpStatus.OK);
 	}
 }
